@@ -28,15 +28,15 @@ function runRegresionTests() {
     statusGeral.textContent = 'Executando...';
     statusGeral.style.color = '#ffc107';
 
-    // Simulação da execução assíncrona dos testes
+    
     setTimeout(() => {
-        // Altera o status de forma aleatória para simular sucesso/falha
+       
         testCases.forEach(test => {
             const random = Math.random();
             if (random < 0.8) {
-                test.status = "PASS"; // 80% de chance de sucesso
+                test.status = "PASS";
             } else {
-                test.status = "FAIL"; // 20% de chance de falha
+                test.status = "FAIL"; 
             }
         });
 
@@ -51,8 +51,9 @@ function runRegresionTests() {
             statusGeral.textContent = 'Execução Finalizada! Todos os testes PASSARAM.';
             statusGeral.style.color = '#28a745';
         }
-    }, 2000); // Simula 2 segundos de execução
+    }, 2000); 
 }
 
 runButton.addEventListener('click', runRegresionTests);
-renderTests(); // Exibe o estado inicial
+
+renderTests(); 
