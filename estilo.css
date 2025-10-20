@@ -1,0 +1,73 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: cadetblue  ;
+    color: #343a40;
+    margin: 0;
+    padding: 20px;
+}
+
+.dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: navy;
+    border-bottom: 2px solid navy;
+    padding-bottom: 10px;
+}
+
+#statusGeral {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+#runTests {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+#runTests:hover {
+    background-color: #218838;
+}
+
+#testResults {
+    list-style: none;
+    padding: 0;
+}
+
+.test-item {
+    padding: 10px;
+    margin-bottom: 8px;
+    border-left: 5px solid;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.PASS {
+    border-left-color: #28a745;
+}
+
+.FAIL {
+    border-left-color: #dc3545;
+}
+
+.PENDING {
+    border-left-color: #ffc107;
+}
+
+.test-status {
+    font-weight: bold;
+}
